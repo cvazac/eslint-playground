@@ -1,0 +1,29 @@
+{
+  "name": "eslint-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint ./src/*"
+  },
+  "author": "Charles Vazac <cvazac@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "eslint": "^7.0.0",
+    "eslint-plugin-react-perf": "^3.3.2"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "react-perf"
+    ],
+    "extends": [
+      "plugin:react-perf/recommended"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    }
+  }
+}
